@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import { Header } from './components/header/Header';
 import {Footer} from './components/footer/Footer';
+import iconGmail from "./assets/images/iconGmail.png";
 
 function App() {
   const menuItems = [
@@ -27,10 +28,9 @@ function App() {
     {
       name: "Github",
       link: "",
-      icon: "./assets/images/iconGmail.png"
+      icon: {iconGmail}
     }
   ]
-
 
   return (
     <div className="App">

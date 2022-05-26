@@ -8,12 +8,11 @@ interface iFooterProps {
 interface iSocialMedia {
   name: string;
   link: string;
-  icon: string;
+  icon: any;
 }
 
 export const Footer = (props: iFooterProps) => {
   const { contactLabel, socialMedias } = props;
-  console.log(contactLabel, socialMedias);
 
   return (
     <footer>
@@ -22,7 +21,7 @@ export const Footer = (props: iFooterProps) => {
         {socialMedias.map((item, index) => {
           return (
             <a key={index} href={item.link}>
-              <img src={item.icon} alt={item.name} />
+              <img src={Object.values(item.icon).toString()} alt={item.name} />
             </a>
           );
         })}
