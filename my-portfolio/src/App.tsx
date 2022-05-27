@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.scss';
 import { Header } from './components/header/Header';
-import {Footer} from './components/footer/Footer';
+import { Main } from "./components/main/Main";
+import { Footer } from './components/footer/Footer';
+
 import iconGmail from "./assets/images/gmail.png";
 import iconGithub from "./assets/images/github.png";
 import iconLinkedin from "./assets/images/linkedin.png";
@@ -53,7 +55,8 @@ function App() {
   return (
     <div className="App">
       <Header menu={menuItems} cta={cta} />
-      <Footer contactLabel="Connect With Us" socialMedias={socialMedias} />
+      <Main />
+      <Footer contactLabel="  My social medias  " socialMedias={socialMedias} />
     </div>
   );
 }
