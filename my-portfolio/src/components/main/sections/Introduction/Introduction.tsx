@@ -23,7 +23,7 @@ export const Introduction = () => {
           <img src={developer} alt="person codding" />
         </div>
       </div>
-      <a href="/sobre" className="introduction__arrowDown">
+      <a href="#about" className="introduction__arrowDown">
         <svg
           width="32"
           height="32"
