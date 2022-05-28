@@ -1,6 +1,7 @@
 import React from "react";
 import "./introduction.scss";
 import developer from "../../../../assets/images/developer.png";
+import { Link } from  'react-scroll';
 
 export const Introduction = () => {
   return (
@@ -23,7 +24,13 @@ export const Introduction = () => {
           <img src={developer} alt="person codding" />
         </div>
       </div>
-      <a href="#about" className="introduction__arrowDown">
+      <Link 
+        to="about" 
+        className="introduction__arrowDown"
+        smooth={true} 
+        offset={50} 
+        duration={1000}
+        >
         <svg
           width="32"
           height="32"
@@ -38,7 +45,7 @@ export const Introduction = () => {
             fill="#D7E5EC"
           />
         </svg>
-      </a>
+      </Link>
     </section>
   );
 };
