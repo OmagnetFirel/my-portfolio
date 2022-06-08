@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAtom } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 interface iHeaderProps {
   menu: menuItem[];
   cta: ctaProps;
@@ -29,7 +29,7 @@ export const Header = (props: iHeaderProps) => {
             {menu.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href={item.link}>{item.name}</a>
+                  <Link to={item.link}>{item.name}</Link>
                 </li>
               );
             })}

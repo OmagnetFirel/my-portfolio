@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-import { Header } from './components/header/Header';
-import { Main } from "./components/main/Main";
-import { Footer } from './components/footer/Footer';
+import { Header } from './routes/main/header/Header';
+import { Main } from "./routes/main/Main";
+import { Footer } from './routes/main/footer/Footer';
 
 import iconGmail from "./assets/images/gmail.png";
 import iconGithub from "./assets/images/github.png";
