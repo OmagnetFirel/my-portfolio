@@ -19,7 +19,7 @@ export const Projects = () => {
         <CardProject
           title="SUPER BAD"
           description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          link="/"
+          link="/blog-selva"
           image={card01}
           tags={["REACTTS", "JAVASCRIPT", "TYPESCRIPT", "SASS"]}
         />

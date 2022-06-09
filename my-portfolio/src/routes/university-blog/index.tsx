@@ -1,7 +1,18 @@
 import React from 'react'
+import {Header} from './header/Header';
 
 export const UniversityBlog = () => {
   return (
-    <div>UniversityBlog</div>
-  )
+      <>
+          <Header 
+            logo="CEFET - RJ" 
+            menuItems={[
+              {name: 'LOREM', link: '#'},
+              {name: "IPSUM", link: '#'},
+              {name: "FEUGIAT", link: '#'},
+              {name: "TEMPUS", link:'#'},
+              {name: "ADIPISCING", link: '#'}
+          ]} />
+      </>
+    )
 }
