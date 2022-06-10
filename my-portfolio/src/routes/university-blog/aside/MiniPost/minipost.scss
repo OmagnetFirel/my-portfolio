@@ -1,0 +1,34 @@
+.MiniPost{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    column-gap: 30px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3{
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: 0.5px;
+            margin: 0 0 8px 0;
+            color: #161616;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+            margin: 0;
+            color: #909090;
+        }
+    }
+
+    &:not(:last-child){
+        padding-bottom:25px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+}
