@@ -1,23 +1,24 @@
 import React from "react";
-import card1 from "../../../assets/images/blog-selva/pic01.jpg";
-// import card2 from "../../../assets/images/blog-selva/pic02.jpg";
-// import card3 from "../../../assets/images/blog-selva/pic03.jpg";
+import './cards.scss';
 
-export const Cards = () => {
+interface iCardProps {
+  image: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+export const Card = (props: iCardProps) => {
+  const { image, title, description, link } = props;
   return (
-    <div>
-      <section>
-        <div>
-            <h1>
-                There are many variations
-            </h1>
-            <img src={card1} alt="" />
-
-            <p>believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200</p>
-
-            <button>More Details</button>
-        </div>
-      </section>
+    <div className="selva-card">
+      <h4 className="selva-card__title">{title}</h4>
+      <img src={image} alt="banner do card" />
+      <p className="selva-card__description">{description}</p>
+      <a href={link} className="selva-card__link">
+        {" "}
+        MORE DETAILS{" "}
+      </a>
     </div>
   );
 };
