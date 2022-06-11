@@ -28,7 +28,7 @@ export const Introduction = () => {
         to="about" 
         className="introduction__arrowDown"
         smooth={true} 
-        offset={50} 
+        offset={-50} 
         duration={1000}
         >
         <svg

@@ -9,7 +9,7 @@ interface iMioloProps {
 export const Miolo = (props: iMioloProps) => {
   const { title, subtitle, image } = props;
   return (
-    <section className="miolo-container">
+    <section className="miolo-container w-3/5">
       <h2 className="miolo-container__title">{title}</h2>
       <p className="miolo-container__subtitle">{subtitle}</p>
       <img src={image} alt="imagem do miolo" />
