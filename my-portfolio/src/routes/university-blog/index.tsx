@@ -20,6 +20,12 @@ export const UniversityBlog = () => {
         <Aside /> 
         <MainContent />
       </div>
+      <footer className="university-footer">
+        <div className="footer-content">
+          <button className="footer-content__prev-button">PREVIOUS PAGE</button>
+          <button className="footer-content__next-button">NEXT PAGE</button>
+        </div>
+      </footer>
     </>
   );
 };

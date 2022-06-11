@@ -12,7 +12,7 @@ export const CardPostagem = (props: iCardProps) => {
 
   return (
     <div className="asideCard">
-        <img src={image} alt="publicacao banner" />
+        <img className="asideCard__banner" src={image} alt="publicacao banner" />
         <div className="asideCard__content">
             <div>
             <h3>{title}</h3>
