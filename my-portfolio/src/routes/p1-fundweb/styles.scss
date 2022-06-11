@@ -1,0 +1,252 @@
+.red {
+    color: #DD0000;
+}
+
+.questao2Wrapper {
+    background-color: #DDDDDD;
+    padding: 20px 40px;
+    max-width: 600px;
+    width: 100%;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        thead {
+            tr {
+                background-color: #e2bc24;
+                color: #DD0000;
+                font-weight: bold;
+
+                th {
+                    border: 2px solid #fff;
+                    border-collapse: collapse;
+                    background-color: #e2bc24;
+                }
+            }
+
+            .grupos-tr {
+                height: 60px;
+                background-color: #FFFFCC;
+
+                td{
+                    border: 2px solid #fff;
+                    border-collapse: collapse;
+                    text-align: center;
+                }
+            }
+
+            .grupos {
+                background-color: #FFFFCC;
+
+                td {
+                    font-weight: bold;
+                    border: 2px solid #fff;
+                    border-collapse: collapse;
+                }
+            }
+        }
+        tbody{
+            td{
+                background-color: #FFFFCC;
+                border: 2px solid #fff;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            .index{
+                background-color: #e2bc24;
+                color: #DD0000;
+                font-weight: bold;
+                border: 2px solid #fff;
+                border-collapse: collapse;
+            }
+        }
+    }
+
+}
+
+.tarifas {
+    margin: 0;
+    position: relative;
+    width: 110%;
+
+    &::after {
+        content: " ";
+        background: url(../../assets/images/roda.png) no-repeat center center;
+        object-fit: contain;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: -30px;
+        bottom: 15px;
+    }
+
+    &::before {
+        content: " ";
+        background: url(../../assets/images/roda.png) no-repeat center center;
+        object-fit: contain;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: -30px;
+        bottom: 15px;
+    }
+}
+
+.questao3{
+    margin: 30px;
+    &__logo{
+        padding: 50px 0 0 50px;
+    }
+    &__nav__list{
+        margin: 40px 50px 0 0;
+        padding: 0 15px;
+        height: 30px;
+        align-items: center;
+    }
+    &__item_link{
+        padding: 0 20px;
+        height: 100%;
+        display: flex;
+    }
+    .sign-up{
+        background: #a9a9a9;
+        border-radius: 8px;
+    }
+    &__banner{
+        margin-top: 210px;
+        padding: 40px  140px;
+        h4{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #000;
+            text-align: center;
+        }
+        p{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            color: #a9a9a9;
+            text-align: center;
+        }
+        a{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            padding: 2px 25px;
+            width: max-content;
+            margin: 20px auto 0;
+            background: #474545;
+            border-radius: 5px;
+
+            &:hover{
+                background: #a19999;
+                color: #fff;
+                animation: pulse 1s infinite;
+            }
+            //animação pulse keyframe
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+.questao4{
+    margin: 30px;
+    &__title{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    &__subTitle{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: #000;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__roda{
+        margin: 0;
+        display: flex;
+        width: 90px;
+        height: 90px;
+        border-radius: 50px;
+        border: 1px solid #000;
+    }
+    h6{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #000;
+        text-align: left;
+    }
+    &__card-text{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: #1b1919;
+        text-align: left;
+    }
+    .bottom-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__text{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: #1b1919;
+        text-align: center;
+    }
+    &__link{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        padding: 5px 25px;
+        width: max-content;
+        margin: 20px auto 0;
+        background: #474545;
+        border-radius: 5px;
+
+        &:hover{
+            background: #a19999;
+            color: #fff;
+            animation: pulse 1s infinite;
+        }
+        //animação pulse keyframe
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+}

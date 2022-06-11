@@ -22,6 +22,9 @@ function App() {
     {
       name: "About",
       link: '/about'
+    },{
+      name: "P1 FundWeb",
+      link: '/p1-fundweb'
     }
   ]
   const cta = {
