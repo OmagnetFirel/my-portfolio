@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {UniversityBlog} from "./routes/university-blog";
 import { BlogSelva } from "./routes/blog-selva";
 import {P1FundWeb} from "./routes/p1-fundweb";
+import {SuperTodo} from "./routes/supertodo";
 import "./index.scss";
 import App from "./App";
 
@@ -18,6 +19,7 @@ root.render(
         <Route path="/universityblog" element={<UniversityBlog />} />
         <Route path="/blog-selva" element={<BlogSelva />} />
         <Route path="/p1-fundweb" element={<P1FundWeb />} />
+        <Route path="/supertodo" element={<SuperTodo />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
