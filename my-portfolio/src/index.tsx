@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {UniversityBlog} from "./routes/university-blog";
+import { UniversityBlog } from "./routes/university-blog";
 import { BlogSelva } from "./routes/blog-selva";
-import {P1FundWeb} from "./routes/p1-fundweb";
-import {SuperTodo} from "./routes/supertodo";
+import { P1FundWeb } from "./routes/p1-fundweb";
+import { SuperTodo } from "./routes/supertodo";
 import { SignUpWrapper } from "./routes/signup";
 
 import "./index.scss";
@@ -24,7 +24,6 @@ root.render(
         <Route path="/p1-fundweb" element={<P1FundWeb />} />
         <Route path="/supertodo" element={<SuperTodo />} />
         <Route path="/signup" element={<SignUpWrapper />} />
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

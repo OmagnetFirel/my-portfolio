@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 
 interface iSignUp {
   userInfo: userInfoProps;
-  setUserInfo: React.Dispatch<React.SetStateAction<userInfoProps>>;
+  setUserInfo: React.Dispatch<Partial<userInfoProps>>;
   step: number;
   setStep: React.Dispatch<React.SetStateAction<number>>;
 }
 interface userInfoProps {
   nome: string;
   sobrenome: string;
-  nascimento?: Date;
+  nomeSocial?: string;
+  temNomeSocial: boolean;
   genero: string;
+  pronomes: string;
+  nascimento?: Date;
+  foto?: string;
 }
 
 export const AuthContext = React.createContext<iSignUp>({
@@ -21,11 +25,23 @@ export const AuthContext = React.createContext<iSignUp>({
 } as iSignUp);
 
 export const SignUpProvider = (props: any) => {
-  const [userInfo, setUserInfo] = useState<userInfoProps>({
-    nome: "",
-    sobrenome: "",
-    genero: "",
-  });
+
+
+  const [userInfo, setUserInfo] = useReducer(
+    (userInfo: userInfoProps, newState: Partial<userInfoProps>) => ({
+      ...userInfo,
+      ...newState
+    }),
+    {
+      nome: "",
+      sobrenome: "",
+      nomeSocial: "",
+      temNomeSocial: false,
+      pronomes: "",
+      genero: "",
+      foto: "",
+    }
+  );
   const [step, setStep] = useState(0);
 
   return (
@@ -34,7 +50,7 @@ export const SignUpProvider = (props: any) => {
         setUserInfo,
         userInfo,
         step,
-        setStep
+        setStep,
       }}
     >
       {props.children}
