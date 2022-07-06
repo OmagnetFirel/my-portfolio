@@ -18,7 +18,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/my-portfolio/" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route path="/universityblog" element={<UniversityBlog />} />
         <Route path="/blog-selva" element={<BlogSelva />} />
         <Route path="/p1-fundweb" element={<P1FundWeb />} />
