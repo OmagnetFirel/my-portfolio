@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import {  Routes, Route, HashRouter } from "react-router-dom";
 import { UniversityBlog } from "./routes/university-blog";
 import { BlogSelva } from "./routes/blog-selva";
 import { P1FundWeb } from "./routes/p1-fundweb";
@@ -16,7 +16,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
       <HashRouter basename="/">
         <Routes>
           <Route path="/" element={<App />} />
@@ -27,6 +26,5 @@ root.render(
           <Route path="/signup" element={<SignUpWrapper />} />
         </Routes>
       </HashRouter>
-    </BrowserRouter>
   </React.StrictMode>
 );
