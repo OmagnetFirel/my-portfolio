@@ -17,7 +17,7 @@ export const Setimo = () => {
     <div>
       {" "}
       <h4>
-        4. Calcula Salario Final Vendedor.
+        7. Calcula Salario Final Vendedor.
       </h4>
       <div>
         <input

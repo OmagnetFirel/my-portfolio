@@ -10,7 +10,7 @@ export const Oitavo = () => {
   return (
     <div>
       {" "}
-      <h4>3. Calcula Temperatura: </h4>
+      <h4>8. Calcula Temperatura: </h4>
       <div>
         <input
           name="numero"

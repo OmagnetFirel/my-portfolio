@@ -7,6 +7,8 @@ import {Quinto} from "./components/quinto";
 import {Sexto} from "./components/sexto";
 import {Setimo} from "./components/setimo";
 import { Oitavo } from './components/oitavo';
+import {Nono} from "./components/nono";
+import {Decimo} from "./components/decimo";
 export const Numbers = () => {
 
   return (
@@ -19,6 +21,8 @@ export const Numbers = () => {
         <Sexto />
         <Setimo />
         <Oitavo />
+        <Nono />
+        <Decimo />
     </div>
   )
 }
