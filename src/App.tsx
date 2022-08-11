@@ -29,6 +29,10 @@ function App() {
     {
       name: "SIGN UP",
       link: '/signup'
+    },
+    {
+      name: "P2 FundWeb",
+      link: '/p2/numbers'
     }
   ]
   const cta = {

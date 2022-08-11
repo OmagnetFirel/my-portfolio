@@ -7,7 +7,7 @@ import { BlogSelva } from "./routes/blog-selva";
 import { P1FundWeb } from "./routes/p1-fundweb";
 import { SuperTodo } from "./routes/supertodo";
 import { SignUpWrapper } from "./routes/signup";
-
+import { Numbers } from "./routes/fundweb/Numbers";
 import "./index.scss";
 import App from "./App";
 
@@ -24,6 +24,7 @@ root.render(
           <Route path="/p1-fundweb" element={<P1FundWeb />} />
           <Route path="/supertodo" element={<SuperTodo />} />
           <Route path="/signup" element={<SignUpWrapper />} />
+          <Route path="/p2/numbers" element={<Numbers />} />
         </Routes>
       </HashRouter>
   </React.StrictMode>
